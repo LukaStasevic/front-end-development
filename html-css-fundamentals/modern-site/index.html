@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FAQ - Beograd</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.question').click(function() {
+      $(this).next('.answer').slideToggle();
+      $(this).toggleClass('open');
+    });
+  });
+</script>
+
+</head>
+<body>
+  <header>
+    <h1>FAQ - Beograd</h1>
+  </header>
+  <div class="container">
+    <div class="section">
+      <div class="question">
+        <span>1. Koji su najpopularniji turistički spomenici u Beogradu?</span>
+      </div>
+      <div class="answer">
+        <p>Najpopularniji turistički spomenici u Beogradu su Kalemegdan, Hram Svetog Save, Skadarlija, Knez Mihailova ulica, Ada Ciganlija, Muzej Nikole Tesle, Muzej savremene umetnosti...</p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="question">
+        <span>2. Kako se najbolje kretati gradom?</span>
+      </div>
+      <div class="answer">
+        <p>Najbolji način da se kretate gradom je gradski prevoz, a posebno popularan način su bicikli i trotineti koje možete iznajmiti u gradu.</p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="question">
+        <span>3. Gde se može najbolje jesti u Beogradu?</span>
+      </div>
+      <div class="answer">
+        <p>Beograd je poznat po svojoj izvrsnoj hrani, a najbolji restorani su Zavicaj, Tri Sesira, Manufaktura, Toro Latin Gastrobar, Restoran Durmitor...</p>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
+
+

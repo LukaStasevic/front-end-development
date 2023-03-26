@@ -1,0 +1,175 @@
+/* Resetujemo sve margine i paddinge */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Postavljamo font */
+  body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Stil za header */
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Stil za sekcije sa pitanjima i odgovorima */
+  .section {
+   
+    margin-bottom: 3rem;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(50%);
+  }
+  
+  /* Stil za pitanja */
+  .question {
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Animacija za strelicu na pitanju */
+  .question::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Promjena izgleda na hover pitanja */
+  .question:hover {
+    background-color: #333;
+  }
+  
+  /* Promjena strelice na hover pitanja */
+  .question:hover::before {
+    border-left: 5px solid #fff;
+    margin-right: 5px;
+  }
+  
+  /* Animacija za klik na pitanje */
+  .question.active {
+    background-color: #333;
+  }
+  
+  /* Promjena izgleda strelice na klik pitanja */
+  .question.active::before {
+    border-left: 5px solid #fff;
+    margin-right: 5px;
+    transform: rotate(-90deg);
+  }
+  
+  /* Stil za odgovore */
+  .answer {
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Animacija za prikazivanje odgovora */
+  .answer.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Animacija za prikrivanje odgovora */
+  .answer:not(.active) {
+    display: none;
+    animation: fadeOut 0.5s ease-in-out;
+  }
+  
+  /* Ključevi za animacije */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }}
+    .section {
+        margin-bottom: 2rem;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #333;
+        color: #fff;
+      }
+      
+      .section h2 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        padding: 0.5rem;
+      }
+      
+      .section p {
+        margin: 0;
+        padding: 1rem;
+      }
+      
+      .section p:last-child {
+        margin-bottom: 0;
+      }
+      
+      .section .question {
+        font-weight: bold;
+         cursor: pointer;
+         padding: 1rem;
+         background-color: rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        transition: transform 0.3s ease-in-out;
+        margin-bottom: 60px; /* dodati margin-bottom */
+      }
+      
+      .section .question:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(5px);
+      }
+      
+      .section .answer {
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+      }
+      
+      .section .answer.show {
+        max-height: 50%;
+      }
+      .answer {
+        display: none;
+      }
+      
+      

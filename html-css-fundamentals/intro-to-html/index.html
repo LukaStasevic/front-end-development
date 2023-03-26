@@ -1,13 +1,61 @@
-<h1>html and css fundamentals</h1>
-<br>
+<!DOCTYPE html>
+  <html lang="en">
 
-<p>One of HTML's main jobs is to give text structure so that a browser can display an HTML document the way its developer intends. This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.
-Prerequisites: 	Basic HTML familiarity, as covered in Getting started with HTML. </p>
-<p>Most structured text consists of headings and paragraphs, whether you are reading a story, a newspaper, a college textbook, a magazine, etc.</p>
-<br>
-<h3>It's really up to you what the elements involved represent, as long as the hierarchy makes sense. You just need to bear in mind a few best practices as you create such structures:</h3>
-<ul>
-<li> <p> Preferably, you should use a single  per page—this is the top level heading, and all others sit below this in the hierarchy.</p></li>
-<li> <p> Make sure you use the headings in the correct order in the hierarchy. Don't use elements to represent subheadings, followed by  elements to represent sub-subheadings—that doesn't make sense and will lead to weird results.</p></li>
-<li> <p> Of the six heading levels available, you should aim to use no more than three per page, unless you feel it is necessary. Documents with many levels (for example, a deep heading hierarchy) become unwieldy and difficult to navigate. On such occasions, it is advisable to spread the content over multiple pages if possible.</p></li>
-</ul>
+    <head>
+      <meta charset="UTF-8">
+      <title>Information Page/stasevicluka</title>
+    </head>
+
+<body>
+    <form action="script.php" method="post" name="demo_form">
+        <fieldset>
+        <legend>Personal information</legend>
+        <label for="name">Your full name:</label><br>
+        <input type="text" name="name" id="name"><br>
+        
+        <label for="email">E-mail adress:</label><br>
+        <input type="text" name="email" id="email"><br>
+        <br>
+        <label for="country">You are: </label>
+        <select name="country" id="country">
+            <option value="Serbia" selected="selected">Serbia</option>
+            <option value="Romania">Romania</option>
+            <option value="Ukraine">Ukraine</option>
+            </select>
+        </fieldset>
+    <br>
+    <form action="script.php" method="post" name="demo_form">
+        <fieldset>
+        <legend>Reason you are contacting us</legend>
+        <input type="checkbox" name="question1" value="Like" id="question1">
+        <label for="question1">I would like detailed information</label>
+        <br>
+        <input type="checkbox" name="question2" value="Like" id="question2">
+        <label for="question2">I am interested in empoyement</label>
+        <br>
+        <input type="checkbox" name="question3" value="Like" id="question3">
+        <label for="question3">I would like to give you my feedback</label>
+        <br>
+        <input type="checkbox" name="question4" value="Like" id="question4">
+        <label for="question4">Other(see below)</label>
+        </fieldset>
+        <br>
+        <label for="comments">Comments:</label>
+        <br>
+        <textarea name="comments" id="comments"></textarea>
+        <br>
+        <br>
+        <button>send</button>
+    </form>
+        
+    </body>
+  </html>
+
+
+
+
+
+
+
+
+</body>

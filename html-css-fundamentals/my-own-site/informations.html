@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <title>Information Page/stasevicluka</title>
+      <style>
+.informationpage1 {
+    position: absolute;
+   bottom: 400px;
+   right: 700px;
+   width: 500px; 
+   height: 300px;
+   filter: drop-shadow(8px 6px 4px #0011ff)
+    }
+  body{background-color: dimgrey;}
+
+  #copyright{
+  bottom: 500px;
+  width: 100px; 
+  height: 770px;
+  }
+  #razmak {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+body {
+  overflow: hidden;
+}
+      </style>
+      <link rel="shortcut icon" type="image/x-icon" href="C:\Users\Stasevic\Pictures\moja slika.png">
+     </head>
+
+<body style="color: rgb(0, 0, 0);">
+    <h1><ins><center>Information Page</center></ins></h1>
+    <br>
+    <hr>
+    <br>
+    <form action="script.php" method="post" name="demo_form" class="informationpage1">
+        <fieldset>
+        <legend><b>Personal information</b></legend>
+        <label for="name">Your full name:</label><br>
+        <input type="text" name="name" id="name"><br>
+        
+        <label for="email">E-mail adress:</label><br>
+        <input type="text" name="email" id="email"><br>
+        <br>
+        <label for="country">You are from: </label>
+        <select name="country" id="country">
+            <option value="Serbia" selected="selected">Serbia</option>
+            <option value="Romania">Romania</option>
+            <option value="Ukraine">Ukraine</option>
+            </select>
+        </fieldset>
+    <br>
+    <form action="script.php" method="post" name="demo_form">
+        <fieldset>
+        <legend><b>Reason you are contacting us</b></legend>
+        <input type="checkbox" name="question1" value="Like" id="question1">
+        <label for="question1">I would like detailed information</label>
+        <br>
+        <input type="checkbox" name="question2" value="Like" id="question2">
+        <label for="question2">I am interested in empoyement</label>
+        <br>
+        <input type="checkbox" name="question3" value="Like" id="question3">
+        <label for="question3">I would like to give you my feedback</label>
+        <br>
+        <input type="checkbox" name="question4" value="Like" id="question4">
+        <label for="question4">Other(see below)</label>
+        </fieldset>
+        <br>
+        <label for="comments"><b>Comments:</b></label>
+        <br>
+        <textarea name="comments" id="comments"></textarea>
+        <br>
+        <br>
+        <button>send</button>
+    </form>
+    <hr id="razmak">
+    <p id="copyright"><center><b>Copyright &copy; LUKA Stasevic</center></b></p>
+    
+    </body>
+  </html>

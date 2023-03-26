@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <title>Moj sajt</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" type="image/x-icon" href="hram svetog save.jpg">
+      <a href="https://www.snapchat.com/add/lukastasevic69" class="snapchat-link">
+        <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-snapchat-square2-512.png" alt="Snapchat Icon" style="width: 40px; height: 40px;">
+      </a>
+    
+    <a href="https://www.instagram.com/stasevicluka" class="instagram-link">
+      <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" alt="Instagram Logo" style="width: 40px; height: 40px;">
+    </a>
+    <link rel="shortcut icon" type="image/x-icon" href="beograd1.jpg">
+    <style>
+        .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding-top: 130px;
+}
+
+.image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image:hover .overlay {
+  opacity: 1;
+}
+
+.image:nth-child(1).text {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+    </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Galerija</h1>
+            <p>Galerija grada Beograda</p>
+          </div>
+          
+          <div class="topnav">
+            <a href="pocetna.html">Početna</a>
+            
+            <a href="Galerija.html">Galerija</a>
+            
+            <a href="o-mestu.html">O mestu</a>
+            
+            <a href="kontakt.html">Kontakt</a>
+          </div>
+          <div class="gallery">
+            <div class="image">
+                <a href="https://www.belgradewaterfront.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-11-at-09.39.24.jpg">
+              <img src="bgvodaa.webp" alt="Beograd na vodi">
+            </a>
+              <div class="overlay">
+                <div class="text">Beograd na vodi</div>
+              </div>
+            </div>
+            <div class="image">
+                <a href="https://static.mondo.rs/Picture/1144788/jpeg/promo.jpg?ts=2022-10-04T11:36:28">
+              <img src="hram svetog save 11.jpg" alt="Hram svetog save">
+              </a>
+              <div class="overlay">
+                <div class="text">Hram Svetog Save</div>
+              </div>
+            </div>
+            <div class="image">
+              <a href="https://slavijahotelbelgrade.com/wp-content/uploads/2017/02/Aca-Matic%CC%81-min-570x380.jpeg">
+              <img src="slavija.jpeg" alt="Slavija">
+              </a>
+              <div class="overlay">
+                <div class="text">Slavija</div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+        <div class="footer">
+            <hr>
+            <p><center><b>Copyright &copy; LUKA Stasevic</b></p></center>
+        </div>
+         
+          
+
+    </body>

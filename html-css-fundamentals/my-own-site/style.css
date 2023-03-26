@@ -1,0 +1,56 @@
+img {
+    width: 32px;
+    height: 32px;
+  }
+  .instagram-link {
+      float: right;
+      margin-right: 20px;
+    }
+      .snapchat-link {
+        float: right;
+        margin-left: 8px;
+      }
+      table {
+      position: absolute; 
+      top: 490px; 
+      left: 1350px; 
+    }
+  table {
+    border: 5px solid black; 
+  }
+  td {
+    border: 5px solid black; 
+  }
+  table {
+      box-shadow: 15px 15px 30px #1303eb;
+    }
+    .youtube-link {
+      position: absolute;
+     bottom: 6px;
+     right: 180px;
+     width: 50px; 
+     height: 50px;
+      }
+       .ShortVideo {
+        position: absolute; 
+      top: 870px; 
+      right: 25px; 
+      filter:drop-shadow(6px 4px 2px #ff0000) 
+       }
+      
+    .audio{
+      position: absolute;
+     bottom: 900px;
+     right: 1670px;
+     width: 200px; 
+     height: 40px;
+    }
+  
+    .videobobi{
+      position: absolute;
+     bottom: 120px;
+     right: 800px;
+     width: 550px; 
+     height: 325px;
+    }
+   
